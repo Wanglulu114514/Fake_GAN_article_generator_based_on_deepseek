@@ -58,7 +58,7 @@ def evaluate_article(article, requirement, api_key=None, reference=None, model="
 
 # ------------------ Streamlit界面 ------------------
 st.set_page_config(page_title="GAN式文章生成器", layout="wide")
-st.title("📝 生成对抗网络（GAN）式文章自动优化")
+st.title("📝 伪GAN文章自动优化")
 st.markdown("通过**生成器**与**评价器**的循环对抗，不断改进文章质量。")
 
 # 侧边栏输入
@@ -161,5 +161,6 @@ if start_button:
 else:
 
     st.info("👈 请在左侧输入参数并点击「开始优化」")
+
 
 
