@@ -3,12 +3,7 @@ import openai
 import sys
 import time
 
-"""
-run this file with command:
-pip install streamlit openai
-streamlit run articlewriter.py
-you also need to set your DeepSeek API key in the environment variable DEEPSEEK_API_KEY, or input it in the sidebar.
-"""
+
 
 # ------------------ 辅助函数：调用DeepSeek API ------------------
 def call_deepseek(prompt, system_message, api_key, model="deepseek-chat", max_tokens=5000):
@@ -165,3 +160,4 @@ if start_button:
 else:
 
     st.info("👈 请在左侧输入参数并点击「开始优化」")
+
